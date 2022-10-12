@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<script>function calculateTevadoba() {
+        let S = document.getElementById("S").value;
+        let d = document.getElementById("d").value;
+        let E = document.getElementById("E").value;
+        let epsilon0 = 8.85e-12;
+
+        tevadoba = (epsilon0 * E * S) / d;
+        if (!isNaN(tevadoba)) {
+            document.getElementById("tevadoba").innerHTML = "C= " + tevadoba;
+        }
+        console.log(tevadoba);
+    }</script>
+
+<body>
+    <form>
+        <h2>კონდესატორის ტევადობის დასათვლელი კალკულატორი</h2>
+
+        <p>შეიყვანეთ s - cm^2 </p>
+        <input type="text" name="S" onchange="calculateTevadoba()" id="S" placeholder="ფართობი(სანტიმეტრ კვადრატში)">
+        <p>შეიყვანეთ d - mm </p>
+        <input type="text" name="d" onchange="calculateTevadoba()" id="d" placeholder="სიგრძე(მილიმეტრებში)">
+        <p>შეიყვანეთ epsiloni </p>
+        <input type="text" name="E" onchange="calculateTevadoba()" id="E" placeholder="ემძ">
+        <h1 id="tevadoba"></h1>
+    </form>
+
+</body>
+
+</html>

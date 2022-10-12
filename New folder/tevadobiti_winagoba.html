@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<script>function calculateTevadobitiWinagoba() {
+        let F = document.getElementById("F").value;
+        let L = document.getElementById("L").value;
+        TevadobitiWinagoba = 2 * 3.14 * F * L;
+        console.log(F);
+        if (!isNaN(TevadobitiWinagoba)) {
+            document.getElementById("tevadobiti_winagoba").innerHTML =
+                "XL=" + TevadobitiWinagoba;
+        }
+    }
+</script>
+
+<body>
+    <h1>კონდესატორის ტევადობითი წინაღობის გამოსათვლელი კალკულატორი</h1>
+    <form>
+        <p>შეიყვანეთ სიხშირე F</p>
+        <input type="text" name="F" id="F" placeholder="სიხშირე" onchange="calculateTevadobitiWinagoba()">
+        <p>შეიყვანეთ ინდუქტიობა L - μH</p>
+        <input type="text" name="L" id="L" placeholder="ინდუქტიობა" onchange="calculateTevadobitiWinagoba()">
+        <h1 id="tevadobiti_winagoba"></h1>
+    </form>
+</body>
+
+</html>

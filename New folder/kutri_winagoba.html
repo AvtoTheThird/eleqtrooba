@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<script>function calculate() {
+        let lenght = document.getElementById("lenght").value;
+
+        let diametri = document.getElementById("diametri").value;
+
+        let masala = document.getElementById("masala").value;
+
+        ans =
+            ((masala * 10) ^ 8) *
+            (lenght / ((diametri / 2) * (diametri / 2) * 3.14 * 2));
+        if (!isNaN(ans)) {
+            document.getElementById("ans").innerHTML = "R= " + ans;
+        }
+
+        console.log(lenght);
+    }</script>
+
+<body>
+    <form action="">
+        <h2 class="satauri">მავთულის წინაღობის გამოსათვლელი კალკულატორი</h2>
+        <p>აირჩიეთ მავთულის მასალა მასალა</p>
+
+
+        <select type="text" name="masala" onchange="calculate()" id="masala" placeholder="ρ Ωm">
+            <option value="">...</option>
+            <option value="2.69">ალუმინი</option>
+            <option value="8">ბრინჯაო</option>
+            <option value="7000">გრაფიტი</option>
+            <option value="95.8 ">ვერცხლისწყალი</option>
+
+        </select>
+
+
+
+        <p>შეიყვანეთ მასალის სიგრძე </p>
+        <input type="text" name="lenght" onchange="calculate()" id="lenght" placeholder="სიგრძე(მეტრებში)">
+        <p>შეიყვანეთ მასალის დიამეტრი </p>
+        <input type="text" name="diametri" onchange="calculate()" id="diametri" placeholder="დიამეტრი(მილიმეტრებში)">
+        <h1 id="ans"></h1>
+    </form>
+
+</body>
+
+</html>

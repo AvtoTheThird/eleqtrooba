@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>function calculatesixshire() {
+        let tevadoba = document.getElementById("tevadoba").value
+        let sixshire = document.getElementById("sixshire").value
+        rezonansulisixshire = 1 / (2 * 3.14 * tevadoba * sixshire)
+        document.getElementById("rez_six").innerHTML = "Xc=" + rezonansulisixshire;
+    }
+</script>
+
+<body>
+    <form>
+        <h2>რეზონანსული სხშირის დასათვლელი კალკულატორი</h2>
+        <p>შეიყვანეთ კონდესატორის ტევადობა ფარადებში</p>
+        <input type="text" name="tevadoba" id="tevadoba" placeholder="ტევადობა" onchange="calculatesixshire()">
+        <p>შეიყვანეთ სიხშირე ჰერცებში</p>
+        <input type="text" name="sixshire" id="sixshire" placeholder="სიხშირე" onchange="calculatesixshire()">
+        <h1 id="rez_six"></h1>
+    </form>
+</body>
+
+</html>
