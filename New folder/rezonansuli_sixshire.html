@@ -10,20 +10,20 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <script>function calculatesixshire() {
-        let tevadoba = document.getElementById("tevadoba").value
-        let sixshire = document.getElementById("sixshire").value
-        rezonansulisixshire = 1 / (2 * 3.14 * tevadoba * sixshire)
-        document.getElementById("rez_six").innerHTML = "Xc=" + rezonansulisixshire;
+        let L = document.getElementById("L").value
+        let C = document.getElementById("C").value
+        rezonansulisixshire = 1 / Math.sqrt(L * C)
+        document.getElementById("rez_six").innerHTML = "W0=" + rezonansulisixshire;
     }
 </script>
 
 <body>
     <form>
         <h2>რეზონანსული სხშირის დასათვლელი კალკულატორი</h2>
-        <p>შეიყვანეთ კონდესატორის ტევადობა ფარადებში</p>
-        <input type="text" name="tevadoba" id="tevadoba" placeholder="ტევადობა" onchange="calculatesixshire()">
-        <p>შეიყვანეთ სიხშირე ჰერცებში</p>
-        <input type="text" name="sixshire" id="sixshire" placeholder="სიხშირე" onchange="calculatesixshire()">
+        <p>ინდუქტიობა</p>
+        <input type="text" name="L" id="L" placeholder="ტევადობა" onchange="calculatesixshire()">
+        <p>ტევადობა</p>
+        <input type="text" name="C" id="C" placeholder="სიხშირე" onchange="calculatesixshire()">
         <h1 id="rez_six"></h1>
     </form>
 </body>

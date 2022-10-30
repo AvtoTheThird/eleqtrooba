@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/New folder/index.css">
+</head>
+<script>
+    function calculateTevadoba() {
+        let q = document.getElementById("q").value;
+        let u = document.getElementById("u").value;
+        tevadoba = q / u;
+
+        if (!isNaN(tevadoba)) {
+            document.getElementById("tevadoba").innerHTML = "C= " + tevadoba;
+
+        }
+    }
+
+
+</script>
+
+<body>
+    <form>
+        <h2>კონდესატორის ტევადობის დასათვლელი კალკულატორი</h2>
+
+        <p>შეიყვანეთ q </p>
+        <input type="text" name="q" onchange="calculateTevadoba()" id="q" placeholder="tevadoba">
+        <p>შეიყვანეთ u </p>
+        <input type="text" name="u" onchange="calculateTevadoba()" id="u" placeholder="dzabva">
+        <h1 id="tevadoba"></h1>
+    </form>
+
+</body>
+
+</html>
