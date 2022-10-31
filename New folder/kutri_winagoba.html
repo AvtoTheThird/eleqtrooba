@@ -27,29 +27,44 @@
     }</script>
 
 <body>
-    <form action="">
-        <h2 class="satauri">მავთულის წინაღობის გამოსათვლელი კალკულატორი</h2>
-        <p>აირჩიეთ მავთულის მასალა მასალა</p>
+
+    <div class="area">
+        <form action="">
+            <h1 class="satauri">მავთულის წინაღობის გამოსათვლელი კალკულატორი</h1>
+            <p>აირჩიეთ მავთულის მასალა მასალა</p>
 
 
-        <select type="text" name="masala" onchange="calculate()" id="masala" placeholder="ρ Ωm">
-            <option value="">...</option>
-            <option value="2.69">ალუმინი</option>
-            <option value="8">ბრინჯაო</option>
-            <option value="7000">გრაფიტი</option>
-            <option value="95.8 ">ვერცხლისწყალი</option>
+            <select type="text" name="masala" onchange="calculate()" id="masala" placeholder="ρ Ωm">
+                <option value="">...</option>
+                <option value="2.69">ალუმინი</option>
+                <option value="8">ბრინჯაო</option>
+                <option value="7000">გრაფიტი</option>
+                <option value="95.8 ">ვერცხლისწყალი</option>
 
-        </select>
+            </select>
 
 
 
-        <p>შეიყვანეთ მასალის სიგრძე </p>
-        <input type="text" name="lenght" onchange="calculate()" id="lenght" placeholder="სიგრძე(მეტრებში)">
-        <p>შეიყვანეთ მასალის დიამეტრი </p>
-        <input type="text" name="diametri" onchange="calculate()" id="diametri" placeholder="დიამეტრი(მილიმეტრებში)">
-        <h1 id="ans"></h1>
-    </form>
-
+            <p>შეიყვანეთ მასალის სიგრძე </p>
+            <input type="text" name="lenght" onchange="calculate()" id="lenght" placeholder="სიგრძე(მეტრებში)">
+            <p>შეიყვანეთ მასალის დიამეტრი </p>
+            <input type="text" name="diametri" onchange="calculate()" id="diametri"
+                placeholder="დიამეტრი(მილიმეტრებში)">
+            <h1 id="ans"></h1>
+        </form>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 </body>
 
 </html>

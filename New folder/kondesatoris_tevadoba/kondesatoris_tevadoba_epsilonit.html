@@ -24,17 +24,33 @@
     }</script>
 
 <body>
-    <form>
-        <h2>კონდესატორის ტევადობის დასათვლელი კალკულატორი</h2>
 
-        <p>შეიყვანეთ s - cm^2 </p>
-        <input type="text" name="S" onchange="calculateTevadoba()" id="S" placeholder="ფართობი(სანტიმეტრ კვადრატში)">
-        <p>შეიყვანეთ d - mm </p>
-        <input type="text" name="d" onchange="calculateTevadoba()" id="d" placeholder="სიგრძე(მილიმეტრებში)">
-        <p>შეიყვანეთ epsiloni </p>
-        <input type="text" name="E" onchange="calculateTevadoba()" id="E" placeholder="ემძ">
-        <h1 id="tevadoba"></h1>
-    </form>
+    <div class="area">
+        <form>
+            <h2>კონდესატორის ტევადობის დასათვლელი კალკულატორი</h2>
+
+            <p>შეიყვანეთ s - cm^2 </p>
+            <input type="text" name="S" onchange="calculateTevadoba()" id="S"
+                placeholder="ფართობი(სანტიმეტრ კვადრატში)">
+            <p>შეიყვანეთ d - mm </p>
+            <input type="text" name="d" onchange="calculateTevadoba()" id="d" placeholder="სიგრძე(მილიმეტრებში)">
+            <p>შეიყვანეთ epsiloni </p>
+            <input type="text" name="E" onchange="calculateTevadoba()" id="E" placeholder="ემძ">
+            <h1 id="tevadoba"></h1>
+        </form>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 
 </body>
 
