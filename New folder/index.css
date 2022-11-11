@@ -214,3 +214,8 @@ footer {
   top: 5vh;
   left: 22vh;
 }
+.navbar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
