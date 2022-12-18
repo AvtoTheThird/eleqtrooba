@@ -12,7 +12,7 @@
 <script>function calculatesixshire() {
         let L = document.getElementById("L").value
         let C = document.getElementById("C").value
-        rezonansulisixshire = 1 / Math.sqrt(L * C)
+        rezonansulisixshire = (1 / Math.sqrt(L * C)).toFixed(2)
         document.getElementById("rez_six").innerHTML = "W0=" + rezonansulisixshire;
     }
 </script>

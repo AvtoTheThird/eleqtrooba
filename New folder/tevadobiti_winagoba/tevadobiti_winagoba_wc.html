@@ -11,7 +11,7 @@
 <script>function calculateTevadobitiWinagoba() {
         let w = document.getElementById("w").value;
         let C = document.getElementById("C").value;
-        TevadobitiWinagoba = 1 / (w * C);
+        TevadobitiWinagoba = (1 / (w * C)).toFixed(2);
         console.log(w);
         if (!isNaN(TevadobitiWinagoba)) {
             document.getElementById("tevadobiti_winagoba").innerHTML =

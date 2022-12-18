@@ -17,10 +17,11 @@
         let masala = document.getElementById("masala").value;
 
         ans =
-            ((masala * 10) ^ 8) *
-            (lenght / ((diametri / 2) * (diametri / 2) * 3.14 * 2));
+            (((masala * 10) ^ 8) *
+                (lenght / ((diametri / 2) * (diametri / 2) * 3.14 * 2))).toFixed(2);
+        // numb = numb.toFixed(2);
         if (!isNaN(ans)) {
-            document.getElementById("ans").innerHTML = "R= " + ans;
+            document.getElementById("ans").innerHTML = "R= " + ans + " ომი";
         }
 
         console.log(lenght);

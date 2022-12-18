@@ -12,7 +12,7 @@
     function calculateTevadoba() {
         let q = document.getElementById("q").value;
         let u = document.getElementById("u").value;
-        tevadoba = q / u;
+        tevadoba = (q / u).toFixed(2);
 
         if (!isNaN(tevadoba)) {
             document.getElementById("tevadoba").innerHTML = "C= " + tevadoba;

@@ -147,7 +147,6 @@ form {
 
 p {
   align-self: center;
-
   margin-top: 20px;
 }
 
@@ -207,15 +206,24 @@ footer {
 }
 .links {
   border-radius: 15px;
-  background-color: #9ba17b;
   width: 1500px;
-
   position: absolute;
-  top: 5vh;
+  top: 10vh;
   left: 22vh;
+  /* flex-wrap: wrap; */
+  background-color: #9ba17b;
+  display: flex;
+  justify-content: space-around;
 }
 .navbar {
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+.main {
+  padding-top: 20px;
+}
+.formulebi {
+  padding-top: 40px;
 }
